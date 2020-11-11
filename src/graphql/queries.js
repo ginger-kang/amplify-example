@@ -1,9 +1,9 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getPost = /* GraphQL */ `
-  query GetPost($id: ID!) {
-    getPost(id: $id) {
+export const getPicture = /* GraphQL */ `
+  query GetPicture($id: ID!) {
+    getPicture(id: $id) {
       id
       name
       description
@@ -12,13 +12,13 @@ export const getPost = /* GraphQL */ `
     }
   }
 `;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
+export const listPictures = /* GraphQL */ `
+  query ListPictures(
+    $filter: ModelPictureFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listPictures(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
