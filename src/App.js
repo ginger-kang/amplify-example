@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { createPicture } from './graphql/mutations';
 import { listPictures } from './graphql/queries';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
@@ -97,4 +98,4 @@ const styles = {
     padding: '12px 0px',
   },
 };
-export default App;
+export default withAuthenticator(App);
